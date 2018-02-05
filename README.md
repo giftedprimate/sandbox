@@ -1,6 +1,6 @@
 # sandbox
 
-> A Vue.js project
+> Sandbox for development of formatting markdown. 
 
 ## Build Setup
 
