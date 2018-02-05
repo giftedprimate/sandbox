@@ -1,0 +1,84 @@
+@media (min-device-width: 767px) and (max-device-width: 991px) {
+  #md-app .page {
+    width: 100vw;
+    height: 120%!important;
+    padding: 0!important;
+  }
+  #md-app .medium-font {
+    line-height: 105%!important;
+  }
+  #md-app .medium-h-font {
+    font-size: 120%!important;
+  }
+  #md-app .medium-strong-font {
+    font-size: 110%!important;
+  }
+  #md-app .right-bar button {
+    font-size: 120%!important;
+    min-height: 60px!important;
+    min-width: 60px!important;
+  }
+}
+
+@media (min-device-width: 479px) and (max-device-width: 768px){
+  #md-app .page {
+    width: 100vw;
+    height: 180%!important;
+    padding: 0!important;
+  }
+  #md-app .small-font {
+    font-size: 180%!important;
+    line-height: 110%!important;
+  }
+  #md-app .small-h-font {
+    font-size: 180%!important;
+  }
+  #md-app .small-strong-font {
+    font-size: 150%!important;
+  }
+  #md-app .right-bar button {
+    font-size: 180%!important;
+    min-height: 100px!important;
+    min-width: 100px!important;
+  }
+}
+
+@media (max-device-width: 479px) {
+  #md-app .page {
+    width: 100vw;
+    height: 240%;
+    padding: 0!important;
+  }
+  #md-app .tiny-font {
+    font-size: 200%!important;
+    line-height: 120%!important;
+  }
+  #md-app .tiny-h-font {
+    font-size: 200%!important;
+    line-height: 120%!important;
+  }
+  #md-app .small-strong-font {
+    font-size: 150%!important;
+  }
+  #md-app .right-bar button {
+    font-size: 300%!important;
+    min-height: 120px!important;
+    min-width: 120px!important;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 120%!important;
+    line-height: 120%!important;
+  }
+  ::-moz-placeholder {
+    font-size: 120%!important;
+    line-height: 120%!important;
+  } /* firefox 19+ */
+  :-ms-input-placeholder {
+    font-size: 120%!important;
+    line-height: 120%!important;
+  } /* ie */
+  #md-app input:-moz-placeholder {
+    font-size: 120%!important;
+    line-height: 120%!important;
+  }
+}

@@ -1,0 +1,372 @@
+/*config styles*/
+:root{
+  --heading-page-background-color: #fff;
+  --heading-page-h1-color: #2c3e50;
+  --heading-page-h2-color: #2c3e50;
+  --heading-page-h3-color: #f5922f;
+  --heading-page-h4-color: #2c3e50;
+  --heading-page-jumbotron-color: #2c3e50;
+
+  --page-background-color: #fff;
+  --page-color: #2c3e50;
+  --page-h1-color: #f7931a;
+  --page-h2-color: #5b5b5b;
+  --page-h3-color: #2c3e50;
+  --page-h4-color: #2c3e50;
+  --page-bold-color: #2c3e50;
+
+  --page-page-header-background-color: #fff2ce;
+  --page-page-header-color: #2c3e50;
+  --page-page-footer-background-color: #fff2ce;
+  --page-page-footer-color: #f7931a;
+  --page-page-footer-resources-color: #2c3e50;
+}
+
+#md-app {
+  background-color: #525659;
+  font-family: 'open sans', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  font-size: 16px;
+  line-height: 200%;
+  height: auto;
+  display: flex;
+  min-height: 100vh;
+}
+/*Main.vue*/
+#md-app .hover-color {
+  color: var(--page-page-header-color);
+  background-color: var(--page-page-header-background-color);
+}
+
+#md-app #text-zone {
+  margin: 0 auto;
+  text-align: left;
+  padding: 70px 0 70px 0;
+}
+
+#md-app #text-zone h1, #text-zone h2, #text-zone h3 {
+  margin-bottom: 20px;
+}
+
+#md-app #text-zone h1, #text-zone h2, #text-zone h3, #text-zone h4 {
+  cursor: pointer;
+  position: relative;
+}
+
+#md-app #text-zone > .alert {
+  position: fixed;
+  width: 50%;
+  left: 25%;
+  right: -25%;
+  z-index: 3000;
+  text-align: center;
+}
+
+#md-app #text-zone p img {
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+#md-app .green-border {
+  border: 5px solid limegreen;
+}
+
+.config-jumbotron {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.config-button {
+  position: fixed!important;
+  top: 10px;
+  left: 10px;
+  z-index: 1010;
+}
+
+#md-app .red-border {
+  border: 5px solid red;
+}
+
+#md-app .main-content a {
+  color: var(--page-page-footer-resources-color)!important;
+}
+
+#md-app .page {
+  background-color: var(--page-background-color);
+  color: var(--page-color);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+  border: 1px solid rgb(221, 221, 221);
+  min-height: 1056px!important;
+  width: 816px;
+  padding: 45px 15px 0 15px;
+  box-shadow: 0 0 20px #000;
+  overflow: auto;
+  position: relative;
+}
+
+#md-app .page h1, .page h2, .page h3, .page h4 {
+  font-family: "titillium web", Helvetica, Arial, sans-serif;
+}
+
+#md-app .page:not(:first-child) h1 {
+  font-weight: bolder;
+  font-size: 38px;
+  color: var(--page-h1-color);
+}
+
+#md-app .page:not(:first-child) h2 {
+  color: #5b5b5b;
+  font-size: 30px;
+  color: var(--page-h2-color);
+}
+
+#md-app .page:not(:first-child) h3 {
+  border-bottom: 0.5px solid #E7E9ED;
+  font-size: 28px;
+  color: var(--page-h3-color);
+}
+
+#md-app .page:not(:first-child) h4 {
+  border-bottom: 0.5px solid #E7E9ED;
+  font-size: 26px;
+  color: var(--page-h4-color);
+}
+
+#md-app .page strong {
+  font-family: 'titillium web', Helvetica, Arial, sans-serif;
+  font-style: normal!important;
+  font-size: 22px;
+  color: var(--page-bold-color);
+  display: block;
+  border-bottom: 0.5px solid #E7E9ED;
+}
+
+#md-app .page ul ~ li  {
+  font-weight: bold;
+}
+
+#md-app .page > *:not(:first-child) {
+  margin: 20px 80px 0 80px;
+}
+
+#md-app .page-number {
+  font-family: "titillium web", Helvetica, Arial, sans-serif;;
+  font-size: 20px;
+  font-weight: bold;
+  float: right;
+  margin-bottom: 20px;
+}
+
+#md-app .page .navbar-default {
+  background-color: var(--page-page-header-background-color);
+  color: var(--page-page-header-color);
+  margin-bottom: 30px;
+}
+
+#md-app .page .navbar-default > * {
+  padding: 15px 0 15px 0;
+  font-size: 14px;
+  margin: 0 60px 0 60px;
+}
+
+#md-app .page .navbar-default > *:first-child {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: 'titillium web', Helvetica, Arial, sans-serif;
+}
+
+#md-app .page .navbar-default > *:last-child {
+  font-weight: 400;
+  font-size: 17px;
+  font-family: 'courier new', Helvetica, Arial, sans-serif;
+}
+
+#md-app .heading {
+  background-color: var(--heading-page-background-color);
+}
+
+#md-app .heading > .jumbotron {
+  color: var(--heading-page-jumbotron-color);
+  background-color: transparent;
+  padding: 4rem 0 80px 0;
+  position: absolute;
+  bottom: 60px;
+}
+
+#md-app .heading > h1 {
+  color: var(--heading-page-h1-color);
+  font-size: 50px;
+  margin-bottom: 0!important;
+}
+
+#md-app .heading > .jumbotron > p {
+  font-size: 18px;
+}
+
+#md-app .heading > .jumbotron > h1 {
+  font-family: 'courier new', Helvetica, Arial, sans-serif;
+  font-size: 45px;
+  margin-bottom: 40px!important;
+}
+
+#md-app .heading > h2 {
+  color: var(--heading-page-h2-color);
+}
+
+#md-app .heading > h3 {
+  margin-bottom: 0!important;
+  margin-top: 0;
+  font-size: 22px;
+  color: var(--heading-page-h3-color);
+  font-family: "open sans", Helvetica, Arial, sans-serif;
+}
+
+#md-app .heading > h4 {
+  color: var(--heading-page-h4-color);
+}
+
+#md-app .table-of-contents {
+  list-style: none;
+}
+
+#md-app .table-of-contents ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#md-app .table-of-contents > ul > li {
+  font-weight: bold;
+  font-family: 'open sans', Helvetica, Arial, sans-serif;
+  padding-left: 10px;
+}
+
+#md-app .table-of-contents li > ul {
+  list-style: none;
+  font-weight: normal;
+  padding-left: 10px;
+}
+
+#md-app .table-of-contents li > ul > li > ul {
+  padding-left: 10px;
+}
+
+#md-app .table-of-contents li a {
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+
+#md-app .social-zone {
+  display: none;
+  padding: 0 4px 0 4px;
+  border-radius: 5px;
+}
+
+#md-app .social-zone > * {
+  display: inline-block;
+}
+
+#md-app .social-zone .fa {
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0;
+  color: #ffffff;
+}
+
+#md-app .social-zone .fa:hover {
+  cursor: pointer;
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.alert {
+  z-index: 100000;
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  padding: 30px;
+}
+
+#md-app .page .page-footer {
+  color: var(--page-page-footer-color);
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+#md-app .page .footer {
+  background-color: var(--page-page-footer-background-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem 1rem;
+  margin-top: 40px;
+}
+
+#md-app .resources {
+  overflow: hidden;
+}
+
+#md-app .resources > * {
+  display: block;
+  color: var(--page-page-footer-color);
+}
+
+#md-app .page .footer-left > .reddit {
+  padding: 20px 0 20px 0;
+}
+
+#md-app .page .footer-left > .resources {
+  font-size: 10px;
+  text-decoration: underline;
+  color: var(--page-page-footer-color);
+}
+
+/*RightBar.vue*/
+#md-app .right-bar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#md-app .right-bar button {
+  background-color: rgb(242, 242, 242)!important;
+  border: none!important;
+  color: rgb(114, 114, 114)!important;
+  border-radius: 50%!important;
+  min-height: 40px!important;
+  min-width: 40px!important;
+  margin-top: 10px!important;
+  cursor: pointer;
+}
+/*Social.vue*/
